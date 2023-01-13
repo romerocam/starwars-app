@@ -1,7 +1,8 @@
 import Head from "next/head";
+import Characters from "../components/Characters";
 import Navbar from "../components/Navbar";
 
-export default function Home() {
+export default function Home({ data }) {
   return (
     <>
       <Head>
@@ -11,6 +12,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
+      <Characters props={data} />
     </>
   );
+}
+
+export async function getStaticProps(context) {
+  const res = await fetch("https://swapi.dev/api/people/");
+  const data = await res.json();
+  console.log("data--->", data);
+  return {
+    props: { data },
+  };
 }
