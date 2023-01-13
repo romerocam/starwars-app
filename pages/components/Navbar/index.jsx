@@ -16,6 +16,7 @@ const Navbar = () => {
       console.log(error);
     }
   };
+  console.log('searchValue ===>',searchValue)
 
   return (
     <div className="bg-gray-800 p-3 flex justify-center">
