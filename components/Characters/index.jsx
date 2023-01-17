@@ -49,7 +49,7 @@ const Characters = ({ props }) => {
 
       <div className="relative flex justify-between items-center max-w-[500px] w-full m-auto pt-4 px-4 pb-4 text-white z-10">
         <button
-          className="flex justify-center items-center w-full m-auto p-3 bg-transparent border border-gray-300 text-white rounded-3xl"
+          className="flex justify-center items-center w-full m-auto p-3 bg-transparent border border-gray-300 text-black rounded-3xl"
           disabled={!previous}
           onClick={handlePreviousPage}
         >
@@ -57,7 +57,7 @@ const Characters = ({ props }) => {
         </button>
 
         <button
-          className="flex justify-center items-center w-full m-auto p-3 bg-transparent border border-gray-300 text-white rounded-3xl"
+          className="flex justify-center items-center w-full m-auto p-3 bg-transparent border border-gray-300 text-black rounded-3xl"
           disabled={!next}
           onClick={handleNextPage}
         >
