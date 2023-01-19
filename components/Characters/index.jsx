@@ -38,7 +38,7 @@ const Characters = ({ props }) => {
   }, []);
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       {/* <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/40 z-[1]" /> */}
       {/* <Image
         src="https://images.unsplash.com/photo-1547700055-b61cacebece9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHN0YXIlMjB3YXJzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
