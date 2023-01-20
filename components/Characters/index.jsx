@@ -8,8 +8,8 @@ const Characters = ({ props }) => {
   const [next, setNext] = useState(props.next);
   const [previous, setPrevious] = useState(props.previous);
   console.log("PROPS", props);
-  // console.log("NEXT", next);
-  // console.log("PREVIOUS", previous);
+  console.log("NEXT", next);
+  console.log("PREVIOUS", previous);
   // console.log("CHARACTERS", characters);
 
   const handleNextPage = () => {
