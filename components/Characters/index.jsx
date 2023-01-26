@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 // import Image from "next/image";
-// import Navbar from "../Navbar";
+import Navbar from "../Navbar";
 
 const Characters = ({ props }) => {
   const [characters, setCharacters] = useState(props.results);
