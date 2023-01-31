@@ -20,7 +20,7 @@ export default function Home({ data }) {
 export async function getStaticProps(context) {
   const res = await fetch("https://akabab.github.io/starwars-api/api/all.json");
   const data = await res.json();
-  // console.log("data--->", data);
+  console.log("data--->", data);
   return {
     props: { data },
   };
